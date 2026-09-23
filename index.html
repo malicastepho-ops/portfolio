@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malica | Public Health Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background-color: #faf7f5;
+            color: #3e2c23;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #e8b7c8, #7b5e57);
+            color: white;
+            padding: 60px 20px;
+        }
+
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+        }
+
+        .hero-photo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .initials-circle {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-color: white;
+            color: #7b5e57;
+            font-size: 4rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 5px solid rgba(255,255,255,0.5);
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        h2 {
+            color: #7b5e57;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #7b5e57;
+            margin-bottom: 10px;
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            list-style: none;
+        }
+
+        .skills-list li {
+            background: white;
+            padding: 15px;
+            border-left: 5px solid #e8b7c8;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .contact-box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .contact-box p {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #7b5e57;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #7b5e57;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                text-align: center;
+                justify-content: center;
+            }
+
+            .hero-text h1 {
+                font-size: 2.3rem;
+            }
+
+            .initials-circle {
+                width: 150px;
+                height: 150px;
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Malica</h1>
+                <p>Public health student and aunt.</p>
+            </div>
+
+            <div class="hero-photo">
+                <!-- To show your photo instead, replace the next line with: <img src="photo.jpg" alt="Malica" style="width:180px;height:180px;border-radius:50%;object-fit:cover;"> -->
+                <div class="initials-circle">M</div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+            I am a Public Health student with an expected graduation year of 2028 or 2029.
+            I chose public health because I am interested in diseases, how they spread,
+            and how they can be prevented from spreading.
+        </p>
+        <br>
+        <p>
+            The health topics I care most about are both mental and physical health because
+            they are equally important and have major effects on the human body.
+        </p>
+        <br>
+        <p>
+            My career goal is to work in the fields of epidemiology and laboratory science,
+            contributing to research, disease prevention, and public health improvement.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Works well with others</li>
+            <li>Strong work ethic</li>
+            <li>Good time management</li>
+        </ul>
+    </div>
+</section>
+
+<section id="portfolio">
+    <div class="container">
+        <h2>PH 320 Portfolio — Applied Biostatistics in Public Health, York College CUNY</h2>
+
+        <div class="card-container">
+
+            <!-- Add your Week 3 portfolio link inside this card later -->
+            <div class="card">
+                <h3>Week 3</h3>
+                <p>Coming soon.</p>
+            </div>
+
+            <!-- Add your Week 4 portfolio link inside this card later -->
+            <div class="card">
+                <h3>Week 4</h3>
+                <p>Coming soon.</p>
+            </div>
+
+            <!-- Add your Week 5 portfolio link inside this card later -->
+            <div class="card">
+                <h3>Week 5</h3>
+                <p>Coming soon.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-box">
+            <p><strong>Email:</strong> <a href="mailto:Malicastepho@gmail.com">Malicastepho@gmail.com</a></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Malica | Public Health Portfolio</p>
+</footer>
+
+</body>
+</html>
