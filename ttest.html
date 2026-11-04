@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Does Your Writing Hand Beat Your Other Hand?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      color: #253044;
+      background-color: #f8fafc;
+      margin: 0;
+      padding: 30px 20px;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    nav {
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      margin-right: 15px;
+      color: #2457a7;
+    }
+
+    h1 {
+      color: #183b63;
+      font-size: 28px;
+    }
+
+    h2 {
+      color: #2457a7;
+      margin-top: 30px;
+      font-size: 21px;
+    }
+
+    h3 {
+      font-size: 17px;
+      margin-top: 20px;
+    }
+
+    .table-container {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #eaf1f8;
+    }
+
+    footer {
+      margin-top: 35px;
+      padding-top: 15px;
+      border-top: 1px solid #ddd;
+      font-size: 13px;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<main>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cross-sectional.html">Cross-Sectional</a>
+    <a href="regression.html">Regression</a>
+    <a href="ttest.html">T-Tests</a>
+  </nav>
+
+  <h1>Does Your Writing Hand Beat Your Other Hand?</h1>
+
+  <h2>1. What We Did</h2>
+  <p>
+    In this activity, nine students from our class wrote the
+    sentence "I am amazing" for one minute using their
+    writing hand and then their other hand. The class also
+    recorded whether each student writes in script or not.
+    Dr. Jacques completed the same activity, and her
+    writing-hand count of 8 was used as a benchmark to
+    compare with the class. We used the results to perform
+    three different t-tests to see whether the differences
+    between the averages were statistically significant.
+  </p>
+
+  <h2>2. My Results</h2>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Test</th>
+          <th>Mean 1</th>
+          <th>Mean 2</th>
+          <th>Difference</th>
+          <th>p-value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>One-sample</td>
+          <td><strong>6.33</strong></td>
+          <td><strong>8.00</strong></td>
+          <td><strong>-1.67</strong></td>
+          <td><strong>0.001</strong></td>
+        </tr>
+        <tr>
+          <td>Independent</td>
+          <td><strong>6.40</strong></td>
+          <td><strong>6.25</strong></td>
+          <td><strong>0.15</strong></td>
+          <td><strong>0.840</strong></td>
+        </tr>
+        <tr>
+          <td>Paired</td>
+          <td><strong>6.33</strong></td>
+          <td><strong>2.56</strong></td>
+          <td><strong>3.78</strong></td>
+          <td><strong>&lt; 0.001</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>3. The Three T-Tests</h2>
+
+  <h3>One-Sample T-Test</h3>
+  <p>
+    The class wrote an average of 6.33 sentences using
+    their writing hand, while Dr. Jacques wrote 8 sentences.
+    This means the class wrote about 1.67 fewer sentences
+    on average. The p-value was 0.001, which is below 0.05,
+    so the difference was statistically significant. This
+    suggests that the class wrote fewer sentences than
+    Dr. Jacques's benchmark.
+  </p>
+
+  <h3>Independent-Samples T-Test</h3>
+  <p>
+    Students who write in script had an average of 6.40
+    sentences, while students who do not write in script
+    had an average of 6.25 sentences. The difference was
+    only 0.15 sentences. The p-value was 0.840, which is
+    above 0.05, so the difference was not statistically
+    significant. This means we do not have enough evidence
+    to say that students who write in script write faster
+    than those who do not.
+  </p>
+
+  <h3>Paired-Samples T-Test</h3>
+  <p>
+    The students wrote an average of 6.33 sentences using
+    their writing hand and 2.56 sentences using their other
+    hand. The difference was about 3.78 sentences. The
+    p-value was less than 0.001, which is below 0.05, so
+    the difference was statistically significant. This
+    shows that students in our class wrote more sentences
+    using their usual writing hand.
+  </p>
+
+  <h2>4. In Plain Words</h2>
+  <p>
+    Overall, the results showed that students wrote more
+    sentences using their usual writing hand compared to
+    their other hand. The class also wrote fewer sentences
+    than Dr. Jacques, but there was no significant
+    difference between students who write in script and
+    those who do not. I think this activity shows how
+    t-tests can help us understand whether differences
+    between averages are statistically significant or
+    could be due to chance.
+  </p>
+
+  <h2>5. What I Would Do Differently</h2>
+  <p>
+    If I could do this study again, I would include more
+    students because nine students is a very small sample.
+    I would also have some students start with their other
+    hand first because practicing with the writing hand
+    could affect their performance during the second round.
+    Another thing I would change is to repeat the activity
+    more than once, including for Dr. Jacques, to see
+    whether the results are consistent. I think these
+    changes would make the study more reliable and help us
+    better understand the differences in writing speed.
+  </p>
+
+  <p><a href="index.html">Home</a></p>
+
+  <footer>
+    Malica Polligadoo &middot; PH 320 &middot;
+    Applied Biostatistics in Public Health
+  </footer>
+
+</main>
+</body>
+</html>
